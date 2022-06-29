@@ -1,0 +1,284 @@
+:root{
+    --clr-primary: #5865f2;
+    --clr-blue: #00b0f4;
+
+    --clr-bg-blue: #404eed;
+    --clr-bg-white: #f6f6f6;
+    --clr-bg-black: #23272a;
+
+    --ff-primary: 'Mukta', sans-serif; /* 200px-500px */
+    --ff-secondary: 'Staatliches', cursive;  /* 400px */
+    --ff-third: 'Ginto';
+
+    --fs-bold: 48px;
+
+}
+
+@font-face {
+    font-family: 'Ginto';
+    src: url('GintoNord-Bold.woff');
+  }
+
+/* Body */
+body{
+    font-family: var(--ff-primary);
+}
+/* Navbar */
+.logo:hover{
+    cursor: pointer;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-btn, .login-btn-2, .login-btn-3{
+    transition: all 0.5s;
+}
+
+.login-btn:hover{
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.38);
+    color: var(--clr-primary) !important;
+}
+.login-btn-2:hover{
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.38);
+    background-color: #7983f5 !important;
+}
+.login-btn-3:hover{
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.38);
+    background-color: #36393f !important;
+}
+
+.navbar{
+    width: 1170px;
+    margin-bottom: 100px;
+}
+
+.dropdown-item{
+    color: black !important;
+    font-weight:300 !important;
+}
+
+.dropdown-item:hover{
+    color: black !important;
+}
+
+.right-content-active{
+    color: var(--clr-blue) !important;
+    background-color: var(--clr-bg-white);
+}
+
+.right-content-active:hover{
+    color: var(--clr-blue) !important;
+}
+
+.list-group-item{
+    border: none;
+}
+
+
+/* Area-1 */
+.area-1{
+    background-color: var(--clr-bg-blue);
+    height: 651px;
+    position: relative;
+    background-image: url(area-1-1.svg), url(area-1-3.svg), url(area-1-2.svg);
+    background-repeat: no-repeat;
+    background-position-x: -100px, right, center;
+    background-position-y: bottom;
+
+    height: 95%;
+    width: 100%;
+}
+
+
+    /* Text */
+    .text-box{
+        height: 400px;
+        font-size: 56px;
+        text-align: center;
+    }
+    .text-box img{
+        position: absolute;
+        bottom: 0;
+    }
+    .text-box h1{
+        margin-left: 100px; 
+        margin-right: 100px;
+        margin-bottom: 50px;
+        font-family: var(--ff-third);
+        font-size: 56px;
+        line-height: 53.2px;
+    }
+    .text-box h6{
+        font-family: var(--ff-primary);
+        font-size: 20px;
+    }
+
+/* Area-2 */
+.area-2, .area-3, .area-5{ 
+    min-height: 550px;
+}
+
+.area-5 h2{
+    font-family: var(--ff-third);
+    margin-top:120px;
+    margin-bottom: 24px; 
+    font-size: 40px; 
+    line-height: 38px;
+}
+
+.area-5 h3{
+    font-size: 36px;
+    line-height: 38.4px;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--clr-bg-black);
+    min-height: 511px;
+}
+
+.footer h2{
+    font-family: var(--ff-third);
+    color: var(--clr-primary);
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.header{
+    color: var(--clr-primary) !important;
+}
+
+
+li a{
+    color: white !important;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: white !important;
+    text-decoration: underline;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.flag{
+    max-width: 25px;
+    color: gray !important;
+}
+
+.dropdown-item:hover{
+    text-decoration: none !important;
+}
+
+.social a{
+    color: white !important;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Mobil-responsive */
+
+.custom-text-align{
+    text-align: center;
+}
+.area-2 .custom-width-align{
+    max-width: 300px;
+}
+
+.area-2 h2{
+    font-size: 48px;
+}
+.area-2 .custom-width-align{
+    max-width: 100%;
+}
+.baslik{
+    padding: 0px !important;
+}
+@media (max-width: 767px){
+    .custom-text-align{
+        text-align: left;
+    }
+    .custom-width-align{
+        max-width: 100%;
+    }
+
+    .area-2{
+        min-height: 420px;
+    }
+
+    .area-2 .custom-width-align{
+        max-width: 100%;
+    }
+    .area-2 h2{
+        font-size: 24px;
+    }
+    .area-2 h5{
+        font-size: 16px;
+    }
+
+    .navbar{
+        margin-bottom: 50px;
+    }
+    .baslik{
+        padding: 50px !important;
+    }
+}
+
+.btn-mobil{
+    display: none;
+}
+@media (max-width:991px){
+    .btn-mobil{
+        display: inline;
+    }
+    .text-box{
+        width: 100%;
+        height: 600px;
+        text-align: left;
+    }
+    .text-box h1{
+        margin-left: 0; 
+        margin-right: 0;
+        margin-bottom: 25px;
+        font-size: 24px;
+        line-height: 22.8px;
+    }
+    .area-5 h2{
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 19px;
+        text-align: left;
+    }
+
+    .area-5 h3{
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
+    .text-box h6{
+        font-size: 16px;
+    }
+    .text-box button{
+        width: 75% !important;
+    }
+
+    .footer h2{
+        line-height: 24px;
+    }
+    .area-1{
+        background-image: url(area-1-2.svg);
+        background-position-x: center;
+    }
+
+}
